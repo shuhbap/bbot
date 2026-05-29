@@ -1,0 +1,104 @@
+{
+  "name": "AFIYA-MD",
+  "description": "Afiya Multi Device whatsapp bot",
+  "logo": "https://i.imgur.com/lfcMtYg.jpeg",
+  "keywords": ["whatsapp"],
+  "repository": "https://github.com/SUHAID-BRO/AFIYA-MD",
+  "website": "https://github.com/SUHAID-BRO/AFIYA-MD",
+  "success_url": "https://github.com/SUHAID-BRO/AFIYA-MD",
+  "stack": "container",
+  "env": {
+    "ANTI_LINK": {
+      "description": "true/false",
+      "required": false
+    },
+    "ANTILINK_ACTION": {
+      "description": "kick",
+      "required": false
+    },
+    "RMBG_KEY": {
+      "description": "Remove bg api key ",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "Afiya-md session id",
+      "required": true
+    },
+    "LOGS": {
+      "description": "need to show message logs ?",
+      "required": false
+     },
+     "AUDIO_DATA": {
+      "description": "audio data , title;artist;image url",
+      "required": "false",
+      "value": "𝑆𝑢ℎ𝑎𝑖𝑑;𝐴𝑓𝑖𝑦𝑎-𝑀𝐷;https://i.ibb.co/jMYcbr7/768c2da56e75.jpg"
+     },
+     "CAPTION": {
+      "description": "enter your media caption",
+      "required": "false",
+      "value": "\n\n\n\n\n\n\n\n\n\n\n\ncreated by @afiya"
+    },
+       "STICKER_DATA": {
+      "description": "Sticker pack name, eg : Afiya;by suhaid-bro",
+      "required": "false",
+      "value": "𝐴𝑓𝑖𝑦𝑎-𝑀𝐷;𝑆𝑢ℎ𝑎𝑖𝑑🤍"
+    },
+    "AUTO_STATUS_READ": {
+      "description": "automatic seen status || true or false",
+      "required": "false",
+      "value": "false"
+    },
+     "AUTO_READ": {
+      "description": "auto read all message make false to disable",
+      "required": "false",
+      "value": "false"
+    },
+
+       "BOT_INFO": {
+      "description": "Bot info : botname;ownername;imageurl;link",
+      "required": "false",
+      "value": "𝘼𝙁𝙄𝙔𝘼-𝙈𝘿;𝙎𝙐𝙃𝘼𝙄𝘿-𝘽𝙍𝙊;https://i.imgur.com/f0MhRnW.png;https://chat.whatsapp.com/CLRG2u7kXmTC9R6kZAnVIy"
+    },
+     "ALWAYS_ONLINE": {
+      "description": "Bot online online : true",
+      "required": "false",
+      "value": "false"
+    },
+    "SUDO": {
+      "description": "sudo numbers with country code seperate with , for multiple numbers",
+      "required": false
+    },
+    "MODE": {
+      "description": "bot work mode",
+      "required": "true",
+      "value": "private"
+     },
+    "PREFIX": {
+      "description": "false to prefix disable || multi prefix : null ",
+      "required": true,
+       "value":"^[.]"
+     },
+    "BGMBOT": {
+      "description": "true to on bgm bot, false to off bgm bot",
+      "required": true,
+       "value":"false"
+     },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name, same as above entered",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku account api key, https://dashboard.heroku.com/account",
+      "required": true
+     }
+ },
+ "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      },
+      {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      }]
+  }
